@@ -1,0 +1,82 @@
+*{
+    background-color: rgb(63, 63, 66);
+    padding: 0;
+    margin: 0;
+}
+#gameName{
+    background-color: black;
+    height: 55px;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+#info{
+    background-color: rgba(244, 255, 255, 0.637);
+    width: 370px;
+    height: 540px;
+    text-align: center;
+    border: 6px solid rgb(26, 26, 26);
+    margin: 0px 10px 5px 50px;
+    padding: 100px 20px 100px 20px;
+}
+#info div{
+    background-color: aliceblue;
+    border: 2px solid rgb(26, 26, 26);
+    margin: 20px;
+    font-size: 25px;
+}
+#setColor{
+    font-size: 13px;
+    padding: 2px;
+    margin: 8px;
+    background-color: aliceblue;
+}
+#exit{
+    background-color: rgb(61, 155, 179);
+    border: 2px solid rgb(0, 57, 71);
+    font-size: 30px;
+    width: 280px;
+}
+#game{
+    background-color: rgb(150, 247, 239);
+    width: 760px;
+    height: 540px;
+    border: 4px solid rgb(26, 26, 26);
+    margin: 0px 5px 5px 30px;
+    overflow: hidden;
+}
+#block{
+    width: 50px;
+    height: 540px;
+    background-color: black;
+    position: relative;
+    left: 760px;
+    animation: block 2s infinite;
+}
+@keyframes block {
+    0%{left: 760px}
+    100%{left: -50px}    
+}
+#hole{
+    width: 50px;
+    height: 150px;
+    background-color: rgb(150, 247, 239);
+    position: relative;
+    left: 760px;
+    top: -540px;
+    animation: block 2s infinite;
+}
+#ball{
+    width: 30px;
+    height: 30px;
+    background-color:rgb(3, 3, 56);
+    border: 2px black outset;
+    position: absolute;
+    transition: 0.1s ease-out;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 30px rgba(16, 0, 54, 0.2);
+}

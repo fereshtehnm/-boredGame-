@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+}
+#timeContainer{
+    text-align: center;
+    border: 3px solid rgb(7, 10, 14);
+    background-color: rgb(55, 122, 126);
+    padding: 50px;
+}
+.time-btn{
+    width: 70px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid rgba(245, 245, 245, 0.744);
+    background-color: rgb(9, 56, 53);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+#timeDisplay{
+    color: azure;
+    font-size:80px;
+}
